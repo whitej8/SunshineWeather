@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flexbox-react": "^4.4.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "0.9.x",
-    "unstated": "^2.1.1"
+    "whatwg-fetch": "^2.0.4"
   },
-  "devDependencies": {    
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

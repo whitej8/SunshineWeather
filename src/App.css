@@ -1,0 +1,32 @@
+header { background: #FF1CA8F4; }
+
+icon {
+    margin: 0;
+    background-position: center;
+    background-size: cover;    
+    width: 3vw;
+    height: 100%;
+}
+
+logo { 
+  margin: 0;
+  background-image: url('assets/Icons/ic_logo.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+icon.i01d, icon.i01n   {background-image: url('assets/Icons/ic_clear.png');}
+icon.i02d, icon.i02n   {background-image: url('assets/Icons/ic_few_clouds.png');}
+icon.i03d, icon.i03n   {background-image: url('assets/Icons/ic_scattered_clouds.png');}
+icon.i04d, icon.i04n   {background-image: url('assets/Icons/ic_broken_clouds.png');}
+icon.i09d, icon.i09n   {background-image: url('assets/Icons/ic_shower_rain.png');}
+icon.i10d, icon.i10n   {background-image: url('assets/Icons/ic_rain.png.png');}
+icon.i11d, icon.i11n   {background-image: url('assets/Icons/ic_thunderstorm.png');}
+icon.i13d, icon.i13n   {background-image: url('assets/Icons/ic_snow.png');}
+icon.i50d, icon.i50n   {background-image: url('assets/Icons/ic_fog.png');}
+*/
+
+
