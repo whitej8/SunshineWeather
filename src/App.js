@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
+import Moment from 'react-moment';
 
 import './App.css';
 
@@ -48,6 +49,7 @@ class App extends Component {
     return (
       <div className="App"> 
         <AppHeader />
+        <Today data={this.state.daily[0]} />
       </div>  
     );
   }
@@ -59,6 +61,28 @@ class AppHeader extends Component {
     return (
       <Flexbox element="header" height="60px">
           <logo />
+      </Flexbox>
+    );
+  }
+}
+
+class Today extends Component {
+  render() {
+    if (!this.props.data) return (<div />)
+
+    return (
+      <Flexbox element="today" height="60px">
+        <div className="left">  
+          <div className="date">
+            Today, <Moment format="MMM DD">{this.props.data.dt}</Moment>
+          </div>
+          <div className="temp max">{this.props.data.temp.max}&#176;</div>
+          <div className="temp min">{this.props.data.temp.min}&#176;</div>    
+        </div>
+        <div className="right">
+          <icon className={"i" + this.props.data.weather[0].icon} />
+          <div className="condition">{this.props.data.weather[0].main}</div>
+        </div>
       </Flexbox>
     );
   }

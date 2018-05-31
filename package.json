@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "flexbox-react": "^4.4.0",
+    "moment": "^2.22.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-moment": "^0.7.0",
     "react-scripts": "0.9.x",
     "whatwg-fetch": "^2.0.4"
   },

@@ -1,9 +1,74 @@
-header { background: #FF1CA8F4; }
+body { 
+  display: flex; 
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+header { 
+  background: #FF1CA8F4; 
+  order: 0;
+}
+
+today {
+  background: #FF1CA8F4;
+  order: 1;
+  margin-left: 30vmin;
+  min-height: 80vh;
+  font-size: 10vmin;
+}
+
+today .left {
+  display: flex; 
+  flex-direction: column;
+  order: 0;
+  min-width: 35vw;
+}
+
+today .right {
+  display: flex; 
+  flex-direction: column;
+  order: 1;  
+  min-width: 35vw;
+}
+
+today icon {
+  background-size: contain;
+  min-width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+today icon.i10d, today icon.i10n { background-image: url('assets/Icons/art_rain.png'); }
+today icon.i01d, today icon.i01n   {background-image: url('assets/Icons/art_clear.png');}
+today icon.i02d, today icon.i02n   {background-image: url('assets/Icons/art_light_clouds.png');}
+today icon.i03d, today icon.i03n   {background-image: url('assets/Icons/art_clouds.png');}
+today icon.i04d, today icon.i04n   {background-image: url('assets/Icons/art_clouds.png');}
+today icon.i09d, today icon.i09n   {background-image: url('assets/Icons/art_rain.png');}
+today icon.i11d, today icon.i11n   {background-image: url('assets/Icons/art_storm.png');}
+today icon.i13d, today icon.i13n   {background-image: url('assets/Icons/art_snow.png');}
+today icon.i50d, today icon.i50n   {background-image: url('assets/Icons/art_fog.png');}
+
+today .condition {
+  display: flex;
+  min-width: 35vw;
+  justify-content: center;
+  margin-bottom: 3vh; 
+}
+
+today .temp { font-family: 'Roboto Condensed Light' }
+today .temp.max {
+  font-size: 20vmin;
+}
+
+today .temp.min {
+  font-size: 8vmin;
+}
 
 icon {
     margin: 0;
     background-position: center;
-    background-size: cover;    
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 3vw;
     height: 100%;
 }
@@ -17,16 +82,15 @@ logo {
   height: 100%;
 }
 
-/*
+icon.i10d, icon.i10n   {background-image: url('assets/Icons/ic_rain.png');}
 icon.i01d, icon.i01n   {background-image: url('assets/Icons/ic_clear.png');}
-icon.i02d, icon.i02n   {background-image: url('assets/Icons/ic_few_clouds.png');}
-icon.i03d, icon.i03n   {background-image: url('assets/Icons/ic_scattered_clouds.png');}
-icon.i04d, icon.i04n   {background-image: url('assets/Icons/ic_broken_clouds.png');}
-icon.i09d, icon.i09n   {background-image: url('assets/Icons/ic_shower_rain.png');}
-icon.i10d, icon.i10n   {background-image: url('assets/Icons/ic_rain.png.png');}
-icon.i11d, icon.i11n   {background-image: url('assets/Icons/ic_thunderstorm.png');}
+icon.i02d, icon.i02n   {background-image: url('assets/Icons/ic_light_clouds.png');}
+icon.i03d, icon.i03n   {background-image: url('assets/Icons/ic_cloudy.png');}
+icon.i04d, icon.i04n   {background-image: url('assets/Icons/ic_cloudy.png');}
+icon.i09d, icon.i09n   {background-image: url('assets/Icons/ic_rain.png');}
+icon.i11d, icon.i11n   {background-image: url('assets/Icons/ic_storm.png');}
 icon.i13d, icon.i13n   {background-image: url('assets/Icons/ic_snow.png');}
 icon.i50d, icon.i50n   {background-image: url('assets/Icons/ic_fog.png');}
-*/
+
 
 
