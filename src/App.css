@@ -12,7 +12,7 @@ header {
 today {
   background: #FF1CA8F4;
   order: 1;
-  margin-left: 30vmin;
+  padding-left: 30vmin;
   min-height: 80vh;
   font-size: 10vmin;
 }
